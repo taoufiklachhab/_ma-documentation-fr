@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "le-cours",
   description: "c est mon cours",
+  base: '/_ma-documentation-fr/',  // ← À AJOUTER (nom de votre dépôt GitHub)
   
   themeConfig: {
     nav: [
@@ -16,8 +17,8 @@ export default defineConfig({
     sidebar: [
       {
         text: 'Documentation',
-        collapsible: true,      // 👈 Permet de replier
-        collapsed: false,       // 👈 Ouvert par défaut
+        collapsible: true,
+        collapsed: false,
         items: [
           { text: 'Accueil', link: '/' },
           { text: 'Exemples Markdown', link: '/markdown-examples' },
@@ -26,8 +27,8 @@ export default defineConfig({
       },
       {
         text: 'Étudiants',
-        collapsible: true,      // 👈 Permet de replier
-        collapsed: true,       // 👈 Ouvert par défaut
+        collapsible: true,
+        collapsed: true,
         items: [
           { text: 'Taufik', link: '/taufik' },
           { text: 'Lachhab', link: '/lachhab' }
@@ -41,7 +42,7 @@ export default defineConfig({
     
     footer: {
       message: 'Documentation le-cours',
-      copyright: 'Copyright © 2024'
+      copyright: 'Copyright © 2026'
     }
   }
 })
